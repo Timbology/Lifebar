@@ -96,6 +96,7 @@
 			children = (
 				FF4CB77F208F370E005259F5 /* AppDelegate.swift */,
 				FF4CB781208F370E005259F5 /* ViewController.swift */,
+				FF9A180B2097582700A33B4B /* HomeViewController.swift */,
 				FF9A180220974EF500A33B4B /* LISU */,
 				FF4CB783208F370E005259F5 /* Main.storyboard */,
 				FF4CB788208F372A005259F5 /* LaunchScreen.storyboard */,
@@ -115,7 +116,6 @@
 				FF9A18052097516400A33B4B /* SignUpViewController.swift */,
 				FF9A18092097535A00A33B4B /* HelpExtensions.swift */,
 				FF9A1807209751C200A33B4B /* RoundedWhiteButton.swift */,
-				FF9A180B2097582700A33B4B /* HomeViewController.swift */,
 			);
 			path = LISU;
 			sourceTree = "<group>";
