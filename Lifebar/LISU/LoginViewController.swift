@@ -23,9 +23,10 @@ class LoginViewController:UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-
+        view.addVerticalGradientLayer(topColor: primaryColor, bottomColor: secondaryColor)
         
         continueButton = RoundedWhiteButton(frame: CGRect(x: 0, y: 0, width: 200, height: 50))
+        continueButton.setTitleColor(secondaryColor, for: .normal)
         continueButton.setTitle("Continue", for: .normal)
         continueButton.titleLabel?.font = UIFont.systemFont(ofSize: 18.0, weight: UIFont.Weight.bold)
         continueButton.center = CGPoint(x: view.center.x, y: view.frame.height - continueButton.frame.height - 24)
@@ -150,7 +151,19 @@ class LoginViewController:UIViewController, UITextFieldDelegate {
                 self.dismiss(animated: false, completion: nil)
             } else {
                 print("Error logging in: \(error!.localizedDescription)")
+                
+                self.resetForm()
             }
         }
     }
+    
+    func resetForm() {
+        let alert = UIAlertController(title: "Error logging in", message: nil, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Okay", style: .default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+        
+        setContinueButton(enabled: true)
+        continueButton.setTitle("Continue", for: .normal)
+        activityView.stopAnimating()
+}
 }
