@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import GoogleMaps
 
 let primaryColor = UIColor(red: 207/255, green: 0/255, blue: 0/255, alpha: 1)
 let secondaryColor = UIColor(red: 52/255, green: 148/255, blue: 230/255, alpha: 1)
@@ -20,6 +21,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
+        GMSServices.provideAPIKey("AIzaSyAqVGwME_hYj0KWCnML3SoxVbTrctSxLi8")
+    //GMSPlacesClient.provideAPIKey("AIzaSyAqVGwME_hYj0KWCnML3SoxVbTrctSxLi8")
+//        "AIzaSyAqVGwME_hYj0KWCnML3SoxVbTrctSxLi8"
         FirebaseApp.configure()
         // Override point for customization after application launch.
         
