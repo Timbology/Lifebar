@@ -266,6 +266,7 @@
         <!--Home View Controller-->
         <scene sceneID="ZLa-Q9-2jt">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LmI-F6-yr9" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="yhv-gK-hvo" customClass="HomeViewController" customModule="Lifebar" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fXD-6Z-ob1"/>
@@ -274,6 +275,12 @@
                     <view key="view" contentMode="scaleToFill" id="A1y-ic-dlc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="yBu-Ng-rOQ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </mapView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="fnQ-XH-XAG"/>
                     </view>
@@ -284,15 +291,16 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="mapView" destination="yBu-Ng-rOQ" id="kpk-Bi-Gr1"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="LmI-F6-yr9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3505" y="-574"/>
+            <point key="canvasLocation" x="3504.8000000000002" y="-574.36281859070471"/>
         </scene>
         <!--Item-->
         <scene sceneID="T27-RX-qRp">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Gmy-SV-nIl" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jX1-AD-jbw" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="bir-dd-d62"/>
                     <toolbarItems/>
@@ -305,6 +313,7 @@
                         <segue destination="yhv-gK-hvo" kind="relationship" relationship="rootViewController" id="Qft-dB-9ie"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gmy-SV-nIl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2735.1999999999998" y="-574.36281859070471"/>
         </scene>

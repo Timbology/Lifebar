@@ -9,26 +9,38 @@
 import Foundation
 import UIKit
 import Firebase
-import GoogleMaps
+import CoreLocation
+import MapKit
 
-class HomeViewController:UIViewController {
+
+class HomeViewController:UIViewController, CLLocationManagerDelegate {
+    
+    @IBOutlet weak var mapView: MKMapView!
+    
+    let locationManager = CLLocationManager()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let camera = GMSCameraPosition.camera(withLatitude: 50.743213, longitude: -1.896901, zoom: 15.0)
-        let mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
-        view = mapView
-        
-        let marker = GMSMarker()
-        marker.position = CLLocationCoordinate2D(latitude: 50.743213, longitude: -1.896901)
-        marker.title = "Bournemouth"
-        marker.snippet = "England"
-        marker.map = mapView
-        
+        locationManager.delegate = self
+        locationManager.requestAlwaysAuthorization()
+        locationManager.startUpdatingLocation()
     }
     
-
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        
+        let location = locations[0]
+        let center = location.coordinate
+        let span = MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05)
+        
+        let region = MKCoordinateRegion(center: center, span: span)
+        
+        mapView.setRegion(region, animated: true)
+        mapView.showsUserLocation = true
+        
+        
+    }
     
     
     @IBAction func handleLogout(_ sender:Any) {

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		24F1942FACF100A6FB85529D /* Pods_Lifebar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 947F827E793956D417EA2CE5 /* Pods_Lifebar.framework */; };
+		FF40F6AB20AC89CF00EE91A9 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF40F6AA20AC89CF00EE91A9 /* MapKit.framework */; };
 		FF4CB780208F370E005259F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4CB77F208F370E005259F5 /* AppDelegate.swift */; };
 		FF4CB782208F370E005259F5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4CB781208F370E005259F5 /* ViewController.swift */; };
 		FF4CB785208F370E005259F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF4CB783208F370E005259F5 /* Main.storyboard */; };
@@ -27,6 +28,7 @@
 		79AC0A115E8D5F690EFBA641 /* Pods-Lifebar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lifebar.release.xcconfig"; path = "Pods/Target Support Files/Pods-Lifebar/Pods-Lifebar.release.xcconfig"; sourceTree = "<group>"; };
 		947F827E793956D417EA2CE5 /* Pods_Lifebar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lifebar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C56ED8C7ED2EC74840314853 /* Pods-Lifebar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lifebar.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Lifebar/Pods-Lifebar.debug.xcconfig"; sourceTree = "<group>"; };
+		FF40F6AA20AC89CF00EE91A9 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		FF4CB77C208F370E005259F5 /* Lifebar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lifebar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF4CB77F208F370E005259F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF4CB781208F370E005259F5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF40F6AB20AC89CF00EE91A9 /* MapKit.framework in Frameworks */,
 				24F1942FACF100A6FB85529D /* Pods_Lifebar.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -59,6 +62,7 @@
 		2D18FD4CA6FDA6C1ADB0355D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FF40F6AA20AC89CF00EE91A9 /* MapKit.framework */,
 				947F827E793956D417EA2CE5 /* Pods_Lifebar.framework */,
 			);
 			name = Frameworks;
@@ -155,6 +159,11 @@
 				TargetAttributes = {
 					FF4CB77B208F370E005259F5 = {
 						CreatedOnToolsVersion = 9.3;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
