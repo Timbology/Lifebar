@@ -226,17 +226,16 @@ class SignUpViewController:UIViewController, UITextFieldDelegate {
         
         guard let imageData = UIImageJPEGRepresentation(image, 0.75) else { return }
         
-        
         let metaData = StorageMetadata()
         metaData.contentType = "image/jpg"
         
         storageRef.putData(imageData, metadata: metaData) { metaData, error in
             if error == nil, metaData != nil {
-                if let url = metaData?.downloadURL() {
-                    completion(url)
-                } else {
-                    completion(nil)
-                }
+//                if let url = metaData?.downloadURL() {
+//                    completion(url)
+//                } else {
+//                    completion(nil)
+//                }
                 // success!
             } else {
                 // failed

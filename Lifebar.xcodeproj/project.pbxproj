@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		24F1942FACF100A6FB85529D /* Pods_Lifebar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 947F827E793956D417EA2CE5 /* Pods_Lifebar.framework */; };
+		FF195D6B20B3110B00B444AB /* AddShelterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF195D6A20B3110B00B444AB /* AddShelterViewController.swift */; };
+		FF195D6D20B3117300B444AB /* Shelter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF195D6C20B3117300B444AB /* Shelter.swift */; };
+		FF25B9EC20B2E248001A5D11 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF25B9EB20B2E248001A5D11 /* ProfileViewController.swift */; };
 		FF40F6AB20AC89CF00EE91A9 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF40F6AA20AC89CF00EE91A9 /* MapKit.framework */; };
 		FF4CB780208F370E005259F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4CB77F208F370E005259F5 /* AppDelegate.swift */; };
 		FF4CB782208F370E005259F5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4CB781208F370E005259F5 /* ViewController.swift */; };
@@ -22,12 +25,17 @@
 		FF9A1808209751C200A33B4B /* RoundedWhiteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9A1807209751C200A33B4B /* RoundedWhiteButton.swift */; };
 		FF9A180A2097535A00A33B4B /* HelpExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9A18092097535A00A33B4B /* HelpExtensions.swift */; };
 		FF9A180C2097582700A33B4B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9A180B2097582700A33B4B /* HomeViewController.swift */; };
+		FFCD875720AF2ECD0041C3C0 /* ShelterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCD875620AF2ECD0041C3C0 /* ShelterViewController.swift */; };
+		FFCD875920AF2EE30041C3C0 /* DonateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCD875820AF2EE30041C3C0 /* DonateViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		79AC0A115E8D5F690EFBA641 /* Pods-Lifebar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lifebar.release.xcconfig"; path = "Pods/Target Support Files/Pods-Lifebar/Pods-Lifebar.release.xcconfig"; sourceTree = "<group>"; };
 		947F827E793956D417EA2CE5 /* Pods_Lifebar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lifebar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C56ED8C7ED2EC74840314853 /* Pods-Lifebar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lifebar.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Lifebar/Pods-Lifebar.debug.xcconfig"; sourceTree = "<group>"; };
+		FF195D6A20B3110B00B444AB /* AddShelterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddShelterViewController.swift; sourceTree = "<group>"; };
+		FF195D6C20B3117300B444AB /* Shelter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shelter.swift; sourceTree = "<group>"; };
+		FF25B9EB20B2E248001A5D11 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		FF40F6AA20AC89CF00EE91A9 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		FF4CB77C208F370E005259F5 /* Lifebar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lifebar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF4CB77F208F370E005259F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -44,6 +52,8 @@
 		FF9A1807209751C200A33B4B /* RoundedWhiteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedWhiteButton.swift; sourceTree = "<group>"; };
 		FF9A18092097535A00A33B4B /* HelpExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpExtensions.swift; sourceTree = "<group>"; };
 		FF9A180B2097582700A33B4B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		FFCD875620AF2ECD0041C3C0 /* ShelterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShelterViewController.swift; sourceTree = "<group>"; };
+		FFCD875820AF2EE30041C3C0 /* DonateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonateViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +109,13 @@
 			isa = PBXGroup;
 			children = (
 				FF4CB77F208F370E005259F5 /* AppDelegate.swift */,
+				FF195D6A20B3110B00B444AB /* AddShelterViewController.swift */,
+				FF195D6C20B3117300B444AB /* Shelter.swift */,
 				FF4CB781208F370E005259F5 /* ViewController.swift */,
 				FF9A180B2097582700A33B4B /* HomeViewController.swift */,
+				FF25B9EB20B2E248001A5D11 /* ProfileViewController.swift */,
+				FFCD875620AF2ECD0041C3C0 /* ShelterViewController.swift */,
+				FFCD875820AF2EE30041C3C0 /* DonateViewController.swift */,
 				FF9A180220974EF500A33B4B /* LISU */,
 				FF4CB783208F370E005259F5 /* Main.storyboard */,
 				FF4CB788208F372A005259F5 /* LaunchScreen.storyboard */,
@@ -136,7 +151,6 @@
 				FF4CB779208F370E005259F5 /* Frameworks */,
 				FF4CB77A208F370E005259F5 /* Resources */,
 				B890283853E5A5B30A3D6A38 /* [CP] Embed Pods Frameworks */,
-				729CB4DA04BC5ACD8047C60A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -218,28 +232,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		729CB4DA04BC5ACD8047C60A /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Lifebar/Pods-Lifebar-resources.sh",
-				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
-				"${PODS_ROOT}/GooglePlacePicker/Frameworks/GooglePlacePicker.framework/Resources/GooglePlacePicker.bundle",
-				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlacePicker.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Lifebar/Pods-Lifebar-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		B890283853E5A5B30A3D6A38 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -272,13 +264,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF9A180A2097535A00A33B4B /* HelpExtensions.swift in Sources */,
+				FF195D6D20B3117300B444AB /* Shelter.swift in Sources */,
 				FF9A18062097516400A33B4B /* SignUpViewController.swift in Sources */,
+				FF25B9EC20B2E248001A5D11 /* ProfileViewController.swift in Sources */,
 				FF4CB794208F6EB6005259F5 /* InitialViewController.swift in Sources */,
+				FF195D6B20B3110B00B444AB /* AddShelterViewController.swift in Sources */,
 				FF4CB782208F370E005259F5 /* ViewController.swift in Sources */,
 				FF4CB780208F370E005259F5 /* AppDelegate.swift in Sources */,
 				FF9A180C2097582700A33B4B /* HomeViewController.swift in Sources */,
 				FF9A18042097515300A33B4B /* LoginViewController.swift in Sources */,
 				FF9A180120974B3100A33B4B /* MenuViewController.swift in Sources */,
+				FFCD875920AF2EE30041C3C0 /* DonateViewController.swift in Sources */,
+				FFCD875720AF2ECD0041C3C0 /* ShelterViewController.swift in Sources */,
 				FF9A1808209751C200A33B4B /* RoundedWhiteButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -427,10 +424,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 28SEJFKM5T;
 				INFOPLIST_FILE = Lifebar/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Timbology.Lifebar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -446,10 +440,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 28SEJFKM5T;
 				INFOPLIST_FILE = Lifebar/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Timbology.Lifebar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

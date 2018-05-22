@@ -11,9 +11,5 @@ target 'Lifebar' do
   pod 'Firebase/Database'
   pod 'Firebase/Core'
   pod 'Firebase/Storage'
-  pod 'GooglePlaces'
-  pod 'GooglePlacePicker'
-  pod 'GoogleMaps'
 	
-
 end
